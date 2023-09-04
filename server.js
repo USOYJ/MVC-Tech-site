@@ -11,7 +11,7 @@ const sequelize = require('../MVC-Tech-site/config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({helpers});
+const hbs = exphbs.create({ helpers: require('./utils/helpers') });
 
 
 const sess = {
