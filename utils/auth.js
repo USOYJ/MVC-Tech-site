@@ -1,12 +1,11 @@
-const auth = (req, res, next) => {
+const redirectToLoginIfNotLoggedIn = (req, res, next) => {
+  if (!req.session.logged_in) {
+    res.redirect("/login");
+  } else {
+    next();
+  }
+};
 
-    if (!req.session.logged_in) {
-      res.redirect('/login');
+module.exports = redirectToLoginIfNotLoggedIn;
 
-    } else {
-      next();
-    }
-  };
-  
-  module.exports = auth;
-  
+

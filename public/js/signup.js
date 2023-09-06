@@ -1,37 +1,28 @@
-const signUpHandler = async (e) => {
-    e.preventDefault();
-    const user_name = $('#signup-username').val().trim();
-    const password = $('#signup-password').val().trim();
+const signupFormHandler = async (event) => {
+  event.preventDefault();
 
-    if (user_name == "") {
-        $('#signup-username').attr("style", "border-color: red;")
-        $('#signup-username').attr("placeholder", "Please enter a username")
-    } 
+  const username = document.querySelector('#username').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const password = document.querySelector('#password').value.trim();
 
-    if (password.length < 8) {
-        $('#signup-password').attr("style", "border-color: red;")
-        $('#signup-password').attr("placeholder", "Please enter a valid password")
-        return;
-    } 
-   
-    if(user_name && password) {
-        const response = await fetch('/api/signup', {
-            method: 'POST',
-            body: JSON.stringify({ user_name, password  }),
-            headers: {'Content-Type': 'application/json'},
-        });
+  if (username && email && password) {
+    const response = await fetch('/api/users/signup', {
+      method: 'POST',
+      body: JSON.stringify({ username, email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-        const signData = await response.json();
-        if(response.status === 400 || response.status === 404) { 
-           return alert(signData.message)
-            }
-        if(response.ok){
-           
-            document.location.replace('/');
-        } else {
-            return alert('This username is already taken. Please try a different Username.')
-        }
+    if (response.ok) {
+      document.location.replace('/'); 
+    } else {
+      alert('Failed to sign up.'); 
     }
+  }
 };
 
-$('#signup-btn').click(signUpHandler)
+
+const signupForm = document.querySelector('#signup-form');
+if (signupForm) {
+  signupForm.addEventListener('submit', signupFormHandler);
+}
+
