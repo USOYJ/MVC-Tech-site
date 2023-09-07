@@ -43,10 +43,15 @@ The Barbie blog is a CMS-style blog site that allow anyone who identify as a "ba
 
 ## Screenshots:
 
+<img width="1439" alt="Screenshot 2023-09-06 at 9 43 18 PM" src="https://github.com/USOYJ/MVC-Tech-site/assets/125850331/f2a50e0e-6c47-4d08-b781-d631ed7ff8e7">
 
+<img width="1435" alt="Screenshot 2023-09-06 at 9 14 26 PM" src="https://github.com/USOYJ/MVC-Tech-site/assets/125850331/635d4acd-3881-4fb1-98a2-1c570020b1f5">
 
+<img width="1429" alt="Screenshot 2023-09-06 at 9 16 22 PM" src="https://github.com/USOYJ/MVC-Tech-site/assets/125850331/27cf04c9-fad4-4c71-b254-ad874642e0b3">
 
+<img width="1432" alt="Screenshot 2023-09-06 at 9 17 10 PM" src="https://github.com/USOYJ/MVC-Tech-site/assets/125850331/1885cb3b-66df-4bb9-b0f8-9534a5e2653e">
 
+<img width="1428" alt="Screenshot 2023-09-06 at 9 15 38 PM" src="https://github.com/USOYJ/MVC-Tech-site/assets/125850331/2d7b6343-6793-4b99-b25f-9b8efc02b06c">
 
 
 
