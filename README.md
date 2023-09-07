@@ -62,7 +62,7 @@ The Barbie blog is a CMS-style blog site that allow anyone who identify as a "ba
 - Express Handlebars
 - Express-Session
 - Handlebars.js
-- MySql2:
+- MySql2
 
 ## Credit
 * Thomas Calle youTube video
