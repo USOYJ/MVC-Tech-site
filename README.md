@@ -1,7 +1,7 @@
 # MVC-Tech-site
 
 # Barbie Blog
-The Barbie blog is a CMS-style blog site that allow anyone who identify as a "barb" to publish articles, post thoughts and opinions.
+The Barbie blog is a CMS-style blog site that allow anyone who identify as a "barb" to publish articles, post thoughts and opinions, Barbie the movie is such an inspirational movie with a very powerful message, my expectation for the movie was that it would be very superficial or just a feelgood movie but No! Such an amazing movie and that inspired me to build a Barbie themed blog.
 
 
 ## How to use
@@ -39,7 +39,8 @@ The Barbie blog is a CMS-style blog site that allow anyone who identify as a "ba
 * WHEN user is idle on the site for more than a set time
 * THEN user is able to view posts and comments but prompted to log in again before I can add, update, or delete posts
 
-
+## Deployed Application:
+<p>Share your thoughts with me! click the <a href="https://barbie-blog-9cd3c5200a4b.herokuapp.com/ ">link</a> it redirects you to a Barbie blog, have fun!</p>
 
 ## Screenshots:
 
