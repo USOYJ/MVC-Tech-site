@@ -22,7 +22,7 @@ const updatePost = async (post_id, title, content) => {
   }
 };
 
-const deletePost = async (post_id) => {
+const deletePostFormHandler = async (post_id) => {
   try {
     const response = await fetch(`/api/posts/${post_id}`, {
       method: "DELETE",
